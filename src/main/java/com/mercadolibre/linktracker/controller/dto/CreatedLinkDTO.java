@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 
 @Getter
 @NoArgsConstructor @AllArgsConstructor
-public class LinkCreadoDTO {
+public class CreatedLinkDTO {
     private String url;
     private String key;
 }

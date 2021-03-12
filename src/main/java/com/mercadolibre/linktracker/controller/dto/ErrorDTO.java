@@ -7,11 +7,11 @@ import org.springframework.http.HttpStatus;
 
 @Getter
 public class ErrorDTO {
-    String mensaje;
+    String message;
     HttpStatus httpStatus;
 
     public ErrorDTO(ResponseEntityException ex) {
-        this.mensaje = ex.getMessage();
+        this.message = ex.getMessage();
         this.httpStatus = ex.getHttpStatus();
     }
 }
