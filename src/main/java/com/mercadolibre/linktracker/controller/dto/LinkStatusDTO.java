@@ -8,5 +8,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor @AllArgsConstructor
 public class LinkStatusDTO {
     private String url;
-    private Integer contador;
+    private Integer counter;
 }

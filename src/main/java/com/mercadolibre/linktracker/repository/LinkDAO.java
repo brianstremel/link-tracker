@@ -1,6 +1,5 @@
 package com.mercadolibre.linktracker.repository;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -9,15 +8,15 @@ import lombok.NoArgsConstructor;
 public class LinkDAO {
     private String url;
     private String password;
-    private Integer cantidadAccesos;
+    private Integer accessCounter;
 
     public LinkDAO(String url, String password) {
         this.url = url;
         this.password = password;
-        this.cantidadAccesos = 0;
+        this.accessCounter = 0;
     }
 
-    public void aumentarAcceso() {
-        cantidadAccesos ++;
+    public void addAccess() {
+        accessCounter++;
     }
 }

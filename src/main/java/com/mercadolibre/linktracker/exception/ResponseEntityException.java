@@ -9,8 +9,8 @@ import org.springframework.http.HttpStatus;
 public class ResponseEntityException extends Exception {
     private HttpStatus httpStatus;
 
-    public ResponseEntityException(HttpStatus httpStatus, String texto) {
-        super(texto);
+    public ResponseEntityException(HttpStatus httpStatus, String text) {
+        super(text);
         this.httpStatus = httpStatus;
     }
 }
